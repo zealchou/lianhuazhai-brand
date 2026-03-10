@@ -1,0 +1,1690 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>戀花宅精品花藝｜品牌定位規劃書</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;500;600;700;900&family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --blush: #F2E0D6;
+  --cream: #FBF7F4;
+  --rose: #C4787A;
+  --rose-deep: #9E5052;
+  --olive: #6B7C5E;
+  --olive-light: #8FA47D;
+  --charcoal: #2D2926;
+  --warm-gray: #7A746F;
+  --gold: #C9A96E;
+  --gold-light: #E8D5A8;
+  --petal: #F5CEC7;
+  --sage: #D4DFC7;
+  --linen: #F0EBE3;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  font-family: 'Noto Sans TC', sans-serif;
+  color: var(--charcoal);
+  background: var(--cream);
+  line-height: 1.8;
+  overflow-x: hidden;
+}
+
+/* ── NAVIGATION ── */
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background: rgba(251,247,244,0.92);
+  backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(196,120,122,0.12);
+  transition: transform 0.4s ease;
+}
+
+.nav-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0.75rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-brand {
+  font-family: 'Noto Serif TC', serif;
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: var(--rose-deep);
+  letter-spacing: 0.08em;
+}
+
+.nav-links {
+  display: flex;
+  gap: 0.25rem;
+  list-style: none;
+  flex-wrap: wrap;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--warm-gray);
+  font-size: 0.78rem;
+  padding: 0.4rem 0.7rem;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+  letter-spacing: 0.04em;
+  font-weight: 400;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  color: var(--rose-deep);
+  background: rgba(196,120,122,0.08);
+}
+
+/* ── HERO ── */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(170deg, var(--cream) 0%, var(--blush) 40%, var(--petal) 70%, var(--sage) 100%);
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse 600px 400px at 20% 30%, rgba(196,120,122,0.12) 0%, transparent 70%),
+    radial-gradient(ellipse 500px 500px at 80% 70%, rgba(107,124,94,0.10) 0%, transparent 70%),
+    radial-gradient(ellipse 300px 300px at 50% 50%, rgba(201,169,110,0.08) 0%, transparent 60%);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+  padding: 2rem;
+  animation: heroFadeIn 1.8s ease-out;
+}
+
+@keyframes heroFadeIn {
+  from { opacity: 0; transform: translateY(40px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.hero-badge {
+  display: inline-block;
+  font-size: 0.72rem;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--rose);
+  border: 1px solid var(--rose);
+  padding: 0.4rem 1.2rem;
+  border-radius: 30px;
+  margin-bottom: 2.5rem;
+  font-weight: 500;
+}
+
+.hero h1 {
+  font-family: 'Noto Serif TC', serif;
+  font-weight: 900;
+  font-size: clamp(2.4rem, 6vw, 4.2rem);
+  line-height: 1.3;
+  color: var(--charcoal);
+  margin-bottom: 1rem;
+}
+
+.hero h1 em {
+  font-style: normal;
+  color: var(--rose-deep);
+}
+
+.hero-subtitle {
+  font-family: 'Noto Serif TC', serif;
+  font-size: clamp(1rem, 2.5vw, 1.35rem);
+  color: var(--warm-gray);
+  font-weight: 400;
+  margin-bottom: 2rem;
+  letter-spacing: 0.06em;
+}
+
+.hero-tagline {
+  font-size: 0.85rem;
+  color: var(--olive);
+  letter-spacing: 0.12em;
+  font-weight: 500;
+}
+
+.hero-scroll {
+  position: absolute;
+  bottom: 2.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: scrollBounce 2s ease-in-out infinite;
+}
+
+.hero-scroll span {
+  display: block;
+  width: 1px;
+  height: 40px;
+  background: linear-gradient(to bottom, var(--rose), transparent);
+  margin: 0 auto 0.5rem;
+}
+
+.hero-scroll small {
+  font-size: 0.65rem;
+  letter-spacing: 0.2em;
+  color: var(--warm-gray);
+}
+
+@keyframes scrollBounce {
+  0%, 100% { transform: translateX(-50%) translateY(0); }
+  50% { transform: translateX(-50%) translateY(8px); }
+}
+
+/* ── SECTIONS ── */
+.section {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 6rem 2rem;
+}
+
+.section-wide {
+  max-width: 1100px;
+}
+
+.section-label {
+  font-size: 0.68rem;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: var(--rose);
+  font-weight: 500;
+  margin-bottom: 0.75rem;
+}
+
+.section-title {
+  font-family: 'Noto Serif TC', serif;
+  font-size: clamp(1.8rem, 4vw, 2.6rem);
+  font-weight: 700;
+  line-height: 1.35;
+  color: var(--charcoal);
+  margin-bottom: 1.5rem;
+}
+
+.section-desc {
+  font-size: 1rem;
+  color: var(--warm-gray);
+  line-height: 2;
+  max-width: 680px;
+}
+
+/* ── DIVIDER ── */
+.divider {
+  text-align: center;
+  padding: 3rem 0;
+}
+
+.divider-line {
+  width: 60px;
+  height: 1px;
+  background: linear-gradient(to right, transparent, var(--rose), transparent);
+  margin: 0 auto;
+}
+
+.divider-icon {
+  font-size: 1.2rem;
+  color: var(--rose);
+  margin: 0.75rem 0;
+}
+
+/* ── FULL-WIDTH BANDS ── */
+.band {
+  padding: 5rem 2rem;
+}
+
+.band--blush { background: var(--blush); }
+.band--linen { background: var(--linen); }
+.band--sage { background: var(--sage); }
+.band--charcoal { background: var(--charcoal); color: #fff; }
+.band--charcoal .section-label { color: var(--gold-light); }
+.band--charcoal .section-title { color: #fff; }
+.band--charcoal .section-desc { color: rgba(255,255,255,0.7); }
+
+/* ── CARDS ── */
+.card-grid {
+  display: grid;
+  gap: 1.5rem;
+  margin-top: 3rem;
+}
+
+.card-grid--2 { grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); }
+.card-grid--3 { grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); }
+.card-grid--4 { grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); }
+
+.card {
+  background: rgba(255,255,255,0.7);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(196,120,122,0.1);
+  border-radius: 16px;
+  padding: 2rem;
+  transition: all 0.4s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 40px rgba(45,41,38,0.06);
+  border-color: rgba(196,120,122,0.2);
+}
+
+.card-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+  margin-bottom: 1.25rem;
+}
+
+.card-icon--rose { background: rgba(196,120,122,0.12); }
+.card-icon--olive { background: rgba(107,124,94,0.12); }
+.card-icon--gold { background: rgba(201,169,110,0.15); }
+
+.card h3 {
+  font-family: 'Noto Serif TC', serif;
+  font-size: 1.15rem;
+  font-weight: 600;
+  margin-bottom: 0.6rem;
+  color: var(--charcoal);
+}
+
+.card p {
+  font-size: 0.88rem;
+  color: var(--warm-gray);
+  line-height: 1.8;
+}
+
+/* ── BRAND PYRAMID ── */
+.pyramid {
+  max-width: 600px;
+  margin: 3rem auto 0;
+  text-align: center;
+}
+
+.pyramid-level {
+  padding: 2rem;
+  margin-bottom: 0;
+  position: relative;
+}
+
+.pyramid-level--why {
+  background: linear-gradient(135deg, var(--rose-deep), var(--rose));
+  color: #fff;
+  border-radius: 16px 16px 0 0;
+  clip-path: polygon(15% 0%, 85% 0%, 100% 100%, 0% 100%);
+  padding: 2.5rem 3rem 2rem;
+}
+
+.pyramid-level--how {
+  background: var(--blush);
+  clip-path: polygon(8% 0%, 92% 0%, 100% 100%, 0% 100%);
+  padding: 2rem 3rem;
+}
+
+.pyramid-level--what {
+  background: var(--linen);
+  border-radius: 0 0 16px 16px;
+  padding: 2rem 3rem;
+}
+
+.pyramid-tag {
+  font-size: 0.68rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  opacity: 0.7;
+  margin-bottom: 0.4rem;
+}
+
+.pyramid-text {
+  font-family: 'Noto Serif TC', serif;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+/* ── JOURNEY PATH ── */
+.journey {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin: 3rem auto;
+  flex-wrap: wrap;
+  max-width: 800px;
+}
+
+.journey-step {
+  text-align: center;
+  padding: 1rem 0.75rem;
+  flex: 0 0 auto;
+}
+
+.journey-dot {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--rose);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin: 0 auto 0.6rem;
+}
+
+.journey-step:nth-child(odd) .journey-dot { background: var(--rose); }
+.journey-step:nth-child(even) .journey-dot { background: var(--olive); }
+
+.journey-text {
+  font-size: 0.8rem;
+  color: var(--charcoal);
+  font-weight: 500;
+}
+
+.journey-arrow {
+  color: var(--gold);
+  font-size: 1.2rem;
+  flex: 0 0 auto;
+}
+
+/* ── QUOTE BLOCK ── */
+.quote-block {
+  text-align: center;
+  max-width: 700px;
+  margin: 3rem auto 0;
+  padding: 3rem 2rem;
+  position: relative;
+}
+
+.quote-block::before {
+  content: '"';
+  font-family: 'Noto Serif TC', serif;
+  font-size: 6rem;
+  color: var(--petal);
+  position: absolute;
+  top: -0.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  line-height: 1;
+}
+
+.quote-text {
+  font-family: 'Noto Serif TC', serif;
+  font-size: clamp(1.2rem, 3vw, 1.6rem);
+  color: var(--charcoal);
+  font-weight: 600;
+  line-height: 1.7;
+  position: relative;
+  z-index: 2;
+}
+
+.quote-attr {
+  margin-top: 1rem;
+  font-size: 0.82rem;
+  color: var(--warm-gray);
+}
+
+/* ── POSITIONING MAP ── */
+.pos-map {
+  max-width: 560px;
+  margin: 3rem auto 0;
+  position: relative;
+  aspect-ratio: 1;
+  border: 1px solid rgba(196,120,122,0.2);
+  border-radius: 16px;
+  background: rgba(255,255,255,0.5);
+  overflow: hidden;
+}
+
+.pos-map-axis-x,
+.pos-map-axis-y {
+  position: absolute;
+  background: rgba(196,120,122,0.15);
+}
+
+.pos-map-axis-x {
+  top: 50%;
+  left: 5%;
+  right: 5%;
+  height: 1px;
+}
+
+.pos-map-axis-y {
+  left: 50%;
+  top: 5%;
+  bottom: 5%;
+  width: 1px;
+}
+
+.pos-label {
+  position: absolute;
+  font-size: 0.7rem;
+  color: var(--warm-gray);
+  letter-spacing: 0.06em;
+}
+
+.pos-label--top { top: 8%; left: 50%; transform: translateX(-50%); }
+.pos-label--bottom { bottom: 8%; left: 50%; transform: translateX(-50%); }
+.pos-label--left { left: 8%; top: 50%; transform: translateY(-50%); }
+.pos-label--right { right: 8%; top: 50%; transform: translateY(-50%); }
+
+.pos-dot {
+  position: absolute;
+  padding: 0.5rem 0.9rem;
+  border-radius: 20px;
+  font-size: 0.72rem;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.pos-dot--self {
+  background: var(--rose-deep);
+  color: #fff;
+  box-shadow: 0 4px 16px rgba(158,80,82,0.3);
+  font-weight: 700;
+  top: 22%;
+  right: 15%;
+  animation: posPulse 3s ease-in-out infinite;
+}
+
+@keyframes posPulse {
+  0%, 100% { box-shadow: 0 4px 16px rgba(158,80,82,0.3); }
+  50% { box-shadow: 0 4px 24px rgba(158,80,82,0.5); }
+}
+
+.pos-dot--other {
+  background: rgba(122,116,111,0.08);
+  color: var(--warm-gray);
+  border: 1px solid rgba(122,116,111,0.15);
+}
+
+.pos-dot--a { top: 65%; left: 15%; }
+.pos-dot--b { top: 30%; left: 12%; }
+.pos-dot--c { top: 70%; right: 20%; }
+.pos-dot--d { top: 45%; left: 28%; }
+
+/* ── METHOD SYSTEM ── */
+.method-card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 2.5rem;
+  border-left: 4px solid var(--rose);
+  margin-bottom: 1.5rem;
+  box-shadow: 0 2px 12px rgba(45,41,38,0.04);
+}
+
+.method-card:nth-child(2) { border-left-color: var(--olive); }
+.method-card:nth-child(3) { border-left-color: var(--gold); }
+
+.method-num {
+  font-family: 'Noto Serif TC', serif;
+  font-size: 2.5rem;
+  font-weight: 900;
+  color: var(--petal);
+  line-height: 1;
+  margin-bottom: 0.5rem;
+}
+
+.method-card:nth-child(2) .method-num { color: var(--sage); }
+.method-card:nth-child(3) .method-num { color: var(--gold-light); }
+
+.method-card h3 {
+  font-family: 'Noto Serif TC', serif;
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+}
+
+.method-card p {
+  color: var(--warm-gray);
+  font-size: 0.9rem;
+  line-height: 1.9;
+}
+
+.method-formula {
+  margin-top: 1rem;
+  padding: 1rem 1.25rem;
+  background: var(--cream);
+  border-radius: 10px;
+  font-size: 0.82rem;
+  color: var(--charcoal);
+  font-weight: 500;
+}
+
+/* ── TIMELINE ── */
+.timeline {
+  position: relative;
+  margin: 3rem auto 0;
+  max-width: 700px;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 28px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(to bottom, var(--rose), var(--olive), var(--gold));
+}
+
+.timeline-item {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 2.5rem;
+  position: relative;
+}
+
+.timeline-marker {
+  flex: 0 0 58px;
+  height: 58px;
+  border-radius: 50%;
+  background: #fff;
+  border: 2px solid var(--rose);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Noto Serif TC', serif;
+  font-weight: 700;
+  font-size: 0.85rem;
+  color: var(--rose-deep);
+  z-index: 2;
+}
+
+.timeline-item:nth-child(2) .timeline-marker { border-color: var(--rose); }
+.timeline-item:nth-child(3) .timeline-marker { border-color: var(--olive); }
+.timeline-item:nth-child(4) .timeline-marker { border-color: var(--olive); }
+.timeline-item:nth-child(5) .timeline-marker { border-color: var(--gold); }
+
+.timeline-content {
+  flex: 1;
+  padding-top: 0.5rem;
+}
+
+.timeline-content h4 {
+  font-family: 'Noto Serif TC', serif;
+  font-size: 1.05rem;
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+}
+
+.timeline-content p {
+  font-size: 0.85rem;
+  color: var(--warm-gray);
+  line-height: 1.8;
+}
+
+/* ── FLYWHEEL ── */
+.flywheel {
+  max-width: 420px;
+  margin: 3rem auto 0;
+  position: relative;
+}
+
+.flywheel-ring {
+  width: 100%;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  border: 2px dashed rgba(196,120,122,0.25);
+  position: relative;
+  animation: flySpin 30s linear infinite;
+}
+
+@keyframes flySpin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.flywheel-node {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: #fff;
+  border: 2px solid var(--rose);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: var(--charcoal);
+  line-height: 1.3;
+  animation: flySpin 30s linear infinite reverse;
+}
+
+.flywheel-node:nth-child(1) { top: -40px; left: 50%; transform: translateX(-50%); }
+.flywheel-node:nth-child(2) { top: 50%; right: -40px; transform: translateY(-50%); border-color: var(--olive); }
+.flywheel-node:nth-child(3) { bottom: -40px; left: 50%; transform: translateX(-50%); border-color: var(--gold); }
+.flywheel-node:nth-child(4) { top: 50%; left: -40px; transform: translateY(-50%); border-color: var(--olive-light); }
+
+.flywheel-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--rose-deep), var(--rose));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-family: 'Noto Serif TC', serif;
+  font-size: 0.82rem;
+  font-weight: 700;
+  text-align: center;
+  line-height: 1.3;
+  box-shadow: 0 8px 30px rgba(158,80,82,0.25);
+}
+
+/* ── NETWORK MAP ── */
+.network-section { margin-top: 2rem; }
+
+.network-category {
+  margin-bottom: 2rem;
+}
+
+.network-cat-title {
+  font-family: 'Noto Serif TC', serif;
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--charcoal);
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--petal);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.network-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 0.75rem;
+}
+
+.network-chip {
+  background: rgba(255,255,255,0.8);
+  border: 1px solid rgba(196,120,122,0.12);
+  border-radius: 10px;
+  padding: 0.75rem 1rem;
+  font-size: 0.78rem;
+  transition: all 0.3s;
+}
+
+.network-chip:hover {
+  border-color: var(--rose);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.04);
+}
+
+.network-chip strong {
+  display: block;
+  font-size: 0.85rem;
+  margin-bottom: 0.2rem;
+  color: var(--charcoal);
+}
+
+.network-chip span {
+  color: var(--warm-gray);
+  font-size: 0.72rem;
+}
+
+/* ── RISK & SCORES ── */
+.score-bar {
+  margin: 1rem 0;
+}
+
+.score-label {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.82rem;
+  margin-bottom: 0.4rem;
+}
+
+.score-label strong { color: var(--charcoal); }
+.score-label span { font-weight: 600; }
+
+.score-track {
+  height: 8px;
+  background: rgba(196,120,122,0.1);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.score-fill {
+  height: 100%;
+  border-radius: 4px;
+  transition: width 1.5s ease;
+}
+
+.score-fill--green { background: linear-gradient(to right, var(--olive-light), var(--olive)); }
+.score-fill--yellow { background: linear-gradient(to right, var(--gold-light), var(--gold)); }
+.score-fill--red { background: linear-gradient(to right, var(--petal), var(--rose-deep)); }
+
+/* ── MANIFESTO ── */
+.manifesto {
+  max-width: 640px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.manifesto p {
+  font-family: 'Noto Serif TC', serif;
+  font-size: 1.05rem;
+  line-height: 2.2;
+  color: rgba(255,255,255,0.85);
+  margin-bottom: 1.5rem;
+}
+
+.manifesto p strong {
+  color: #fff;
+  font-weight: 600;
+}
+
+/* ── GOLDEN SENTENCES ── */
+.golden-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.25rem;
+  margin-top: 2.5rem;
+}
+
+.golden-card {
+  background: #fff;
+  border-radius: 14px;
+  padding: 1.75rem;
+  text-align: center;
+  border: 1px solid rgba(201,169,110,0.15);
+  transition: all 0.3s;
+}
+
+.golden-card:hover {
+  box-shadow: 0 8px 24px rgba(201,169,110,0.1);
+  transform: translateY(-3px);
+}
+
+.golden-card-label {
+  font-size: 0.68rem;
+  letter-spacing: 0.15em;
+  color: var(--gold);
+  font-weight: 500;
+  margin-bottom: 0.6rem;
+}
+
+.golden-card-text {
+  font-family: 'Noto Serif TC', serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--charcoal);
+  line-height: 1.5;
+}
+
+/* ── TABLE ── */
+.styled-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  margin: 2rem 0;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+}
+
+.styled-table th {
+  background: var(--rose-deep);
+  color: #fff;
+  font-size: 0.82rem;
+  font-weight: 600;
+  padding: 0.9rem 1.2rem;
+  text-align: left;
+  letter-spacing: 0.04em;
+}
+
+.styled-table td {
+  padding: 0.85rem 1.2rem;
+  font-size: 0.85rem;
+  border-bottom: 1px solid rgba(196,120,122,0.08);
+  background: #fff;
+  color: var(--charcoal);
+}
+
+.styled-table tr:last-child td { border-bottom: none; }
+.styled-table tr:hover td { background: var(--cream); }
+
+/* ── FOOTER ── */
+.footer {
+  text-align: center;
+  padding: 4rem 2rem 3rem;
+  background: var(--charcoal);
+  color: rgba(255,255,255,0.5);
+  font-size: 0.78rem;
+}
+
+.footer-brand {
+  font-family: 'Noto Serif TC', serif;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 0.5rem;
+}
+
+.footer-line {
+  width: 40px;
+  height: 2px;
+  background: var(--rose);
+  margin: 1rem auto;
+}
+
+/* ── TAG ── */
+.tag {
+  display: inline-block;
+  font-size: 0.72rem;
+  padding: 0.3rem 0.7rem;
+  border-radius: 15px;
+  font-weight: 500;
+  margin: 0.15rem;
+}
+
+.tag--rose { background: rgba(196,120,122,0.1); color: var(--rose-deep); }
+.tag--olive { background: rgba(107,124,94,0.1); color: var(--olive); }
+.tag--gold { background: rgba(201,169,110,0.12); color: var(--gold); }
+
+/* ── RESPONSIVE ── */
+@media (max-width: 768px) {
+  .section { padding: 4rem 1.5rem; }
+  .band { padding: 3.5rem 1.5rem; }
+  .nav-links { display: none; }
+  .pos-map { aspect-ratio: auto; min-height: 360px; }
+  .journey { gap: 0.2rem; }
+  .journey-step { padding: 0.5rem; }
+  .timeline::before { left: 18px; }
+  .timeline-marker { flex: 0 0 38px; height: 38px; font-size: 0.72rem; }
+}
+
+/* ── ANIMATION ON SCROLL ── */
+.fade-up {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.fade-up.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ── PRINT ── */
+@media print {
+  .nav, .hero-scroll { display: none; }
+  .hero { min-height: auto; padding: 4rem 2rem; }
+  .section, .band { padding: 2rem; break-inside: avoid; }
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAV -->
+<nav class="nav">
+  <div class="nav-inner">
+    <div class="nav-brand">戀花宅 Brand Plan</div>
+    <ul class="nav-links">
+      <li><a href="#positioning">定位</a></li>
+      <li><a href="#audience">受眾</a></li>
+      <li><a href="#pyramid">金字塔</a></li>
+      <li><a href="#method">方法論</a></li>
+      <li><a href="#journey">旅程</a></li>
+      <li><a href="#market">市場</a></li>
+      <li><a href="#health">健檢</a></li>
+      <li><a href="#network">人脈</a></li>
+      <li><a href="#roadmap">路線圖</a></li>
+      <li><a href="#manifesto">宣言</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-content">
+    <div class="hero-badge">Brand Positioning Plan 2026</div>
+    <h1>戀花宅<br><em>精品花藝</em></h1>
+    <p class="hero-subtitle">從第一束花，到自己的花店</p>
+    <p class="hero-tagline">用設計邏輯做花藝 ── 品牌定位規劃書</p>
+  </div>
+  <div class="hero-scroll">
+    <span></span>
+    <small>SCROLL</small>
+  </div>
+</section>
+
+<!-- ═══════════════ PART 1: POSITIONING ═══════════════ -->
+<section class="section fade-up" id="positioning">
+  <div class="section-label">Part 01 — Brand Positioning</div>
+  <h2 class="section-title">品牌一句話定位</h2>
+  <p class="section-desc" style="font-size:1.1rem; line-height:2.2; color:var(--charcoal);">
+    <strong style="color:var(--rose-deep);">戀花宅精品花藝</strong>是一個為<strong>想把花藝興趣變成副業的女性</strong>設計的<strong>永生花創業型花藝課</strong>。<br>
+    我們教的不是單純花藝技巧，而是——<em style="color:var(--rose-deep); font-style:normal; font-weight:600;">市場會買單的花禮設計</em>。
+  </p>
+
+  <div class="quote-block">
+    <p class="quote-text">花藝不是天份，而是方法。</p>
+    <p class="quote-attr">── 戀花宅學派核心信念</p>
+  </div>
+</section>
+
+<div class="divider"><div class="divider-line"></div><div class="divider-icon">✿</div></div>
+
+<!-- ═══════════════ PART 2: WHY WE EXIST ═══════════════ -->
+<div class="band band--linen">
+  <section class="section fade-up" style="padding-top:0; padding-bottom:0;">
+    <div class="section-label">Part 02 — Why We Exist</div>
+    <h2 class="section-title">品牌存在的核心理由</h2>
+    <p class="section-desc">
+      市場上最大的斷裂：很多花藝課程價格昂貴，但學員學完之後<strong>無法真正賺到錢</strong>。花藝教育常停留在技術展示、興趣創作、藝術表現——卻很少談市場需求、商品設計、花禮銷售邏輯。
+    </p>
+
+    <div class="card-grid card-grid--3" style="margin-top:2.5rem;">
+      <div class="card">
+        <div class="card-icon card-icon--rose">🎨</div>
+        <h3>現有花藝教育</h3>
+        <p>從藝術角度出發，強調美感與技術，學員「會做花但賣不出去」。</p>
+      </div>
+      <div class="card">
+        <div class="card-icon card-icon--olive">📉</div>
+        <h3>市場的痛點</h3>
+        <p>很多人會做花，但不懂市場喜歡什麼、不知道怎麼把作品變成商品、無法接到訂單。</p>
+      </div>
+      <div class="card">
+        <div class="card-icon card-icon--gold">💡</div>
+        <h3>戀花宅的解法</h3>
+        <p>用<strong>設計邏輯</strong>理解花藝，用<strong>商品思維</strong>做花禮，讓興趣真正能帶來收入。</p>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ═══════════════ PART 3: AUDIENCE ═══════════════ -->
+<section class="section section-wide fade-up" id="audience">
+  <div class="section-label">Part 03 — Target Audience</div>
+  <h2 class="section-title">目標受眾與核心張力</h2>
+
+  <div class="card-grid card-grid--2">
+    <div class="card">
+      <h3>🌸 受眾輪廓</h3>
+      <p>
+        <strong>35–55 歲女性</strong>，喜歡花、想培養興趣、想擁有第二專長、想要一點自己的收入。她們心中一直有個聲音：<em>「如果能靠花藝接單就好了。」</em>
+      </p>
+      <div style="margin-top:1rem;">
+        <span class="tag tag--rose">喜歡花藝</span>
+        <span class="tag tag--olive">副業需求</span>
+        <span class="tag tag--gold">追求成就感</span>
+        <span class="tag tag--rose">經濟獨立</span>
+      </div>
+    </div>
+    <div class="card">
+      <h3>💭 內心最大矛盾</h3>
+      <p>
+        一方面：「我真的很喜歡花。」<br>
+        另一方面：「但如果只是興趣，我不確定要不要再花錢學。」<br><br>
+        <strong style="color:var(--rose-deep);">她們真正想要的是：<br>讓喜歡的事情，也能帶來收入。</strong>
+      </p>
+    </div>
+  </div>
+
+  <!-- Transformation -->
+  <div style="margin-top:3rem;">
+    <h3 style="font-family:'Noto Serif TC',serif; font-size:1.3rem; font-weight:600; margin-bottom:1.5rem; text-align:center;">Transformation 品牌承諾的改變</h3>
+    <div class="card-grid card-grid--3">
+      <div class="card" style="text-align:center; border-top:3px solid var(--warm-gray);">
+        <h3 style="color:var(--warm-gray);">Before</h3>
+        <p>會做花，但不知道市場喜歡什麼。作品好看，卻很難接到訂單。</p>
+      </div>
+      <div class="card" style="text-align:center; border-top:3px solid var(--gold);">
+        <h3 style="color:var(--gold);">Key Shift</h3>
+        <p>從「會做花」變成「做得出<strong>能賣的花</strong>」</p>
+      </div>
+      <div class="card" style="text-align:center; border-top:3px solid var(--rose-deep);">
+        <h3 style="color:var(--rose-deep);">After</h3>
+        <p>懂得設計市場會買的花禮，從朋友介紹與小型接單開始，建立自己的花藝副業。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"><div class="divider-line"></div><div class="divider-icon">✿</div></div>
+
+<!-- ═══════════════ PART 4: BRAND PYRAMID ═══════════════ -->
+<section class="section fade-up" id="pyramid">
+  <div class="section-label">Part 04 — Brand Pyramid</div>
+  <h2 class="section-title">品牌金字塔</h2>
+  <p class="section-desc">三層結構定義戀花宅的靈魂、方法與產品。</p>
+
+  <div class="pyramid">
+    <div class="pyramid-level pyramid-level--why">
+      <div class="pyramid-tag">WHY — 品牌靈魂</div>
+      <div class="pyramid-text" style="color:#fff;">讓喜歡花的人，<br>走向自己的花店人生</div>
+    </div>
+    <div class="pyramid-level pyramid-level--how">
+      <div class="pyramid-tag">HOW — 方法與差異</div>
+      <div class="pyramid-text">設計邏輯 × 商品花藝 × 系統思維</div>
+    </div>
+    <div class="pyramid-level pyramid-level--what">
+      <div class="pyramid-tag">WHAT — 產品與內容</div>
+      <div class="pyramid-text">花藝課程 · 花藝內容 · 花藝社群</div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════ PART 5: BRAND IDENTITY ═══════════════ -->
+<div class="band band--blush">
+  <section class="section section-wide fade-up" style="padding-top:0; padding-bottom:0;">
+    <div class="section-label">Part 05 — Brand Identity</div>
+    <h2 class="section-title">品牌識別系統</h2>
+
+    <div class="card-grid card-grid--2">
+      <div class="card">
+        <h3>🏷️ 品牌定位句</h3>
+        <p style="font-family:'Noto Serif TC',serif; font-size:1.15rem; font-weight:600; color:var(--charcoal); margin-top:0.5rem;">
+          戀花宅：用設計邏輯教花藝的精品花藝學校
+        </p>
+        <p style="margin-top:0.5rem; font-size:0.85rem;">
+          副句：從第一束花，到自己的花店。
+        </p>
+      </div>
+      <div class="card">
+        <h3>👩‍🏫 品牌角色</h3>
+        <p style="font-family:'Noto Serif TC',serif; font-size:1.15rem; font-weight:600; color:var(--rose-deep); margin-top:0.5rem;">
+          花藝學姊
+        </p>
+        <p style="margin-top:0.5rem;">
+          走在前面的學姊，帶你走向自己的花店。<br>語氣：溫柔、真實、不浮誇、很實戰。
+        </p>
+      </div>
+      <div class="card">
+        <h3>🎨 品牌風格</h3>
+        <p>
+          <strong>視覺特徵：</strong>乾淨 × 有結構 × 有設計感<br>
+          <strong>品牌氣質：</strong>精品感花藝學校<br>
+          <strong>語氣旋鈕：</strong>溫柔陪伴 × 鼓勵行動
+        </p>
+      </div>
+      <div class="card">
+        <h3>🐱 品牌起源</h3>
+        <p>
+          品牌名來自創辦人的貓咪「宅宅」。科技業 PM 出身，用<strong>系統思維</strong>理解花藝，把方法論變成可複製的教學系統。
+        </p>
+      </div>
+    </div>
+
+    <div style="margin-top:2rem;">
+      <h3 style="font-family:'Noto Serif TC',serif; font-size:1.05rem; margin-bottom:1rem;">品牌語氣規範</h3>
+      <table class="styled-table">
+        <thead>
+          <tr>
+            <th>✅ 品牌會說</th>
+            <th>❌ 品牌不會說</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>「這個花禮，市場真的會買。」</td>
+            <td>「這是最厲害的花藝。」</td>
+          </tr>
+          <tr>
+            <td>「我們一起看看怎麼讓這束花更好。」</td>
+            <td>「你必須這樣做才對。」</td>
+          </tr>
+          <tr>
+            <td>「先做完一束，你就會越來越好。」</td>
+            <td>「保證讓你月入十萬！」</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+</div>
+
+<!-- ═══════════════ PART 6: METHOD ═══════════════ -->
+<section class="section fade-up" id="method">
+  <div class="section-label">Part 06 — Flowerpreneur System</div>
+  <h2 class="section-title">戀花宅三大花藝方法論</h2>
+  <p class="section-desc">從配色到商品，系統化拆解花藝，讓方法取代天份。</p>
+
+  <div style="margin-top:2.5rem;">
+    <div class="method-card">
+      <div class="method-num">01</div>
+      <h3>配色三層法</h3>
+      <p>解決「顏色太亂」的核心問題。每束花只需要三個層級的色彩規劃。</p>
+      <div class="method-formula">
+        🎨 主色 60%（核心色）＋ 輔色 30%（支持色）＋ 點綴色 10%（亮點）<br>
+        → 不亂、有重點、有層次
+      </div>
+    </div>
+    <div class="method-card">
+      <div class="method-num">02</div>
+      <h3>花材角色法</h3>
+      <p>解決「花材選錯」的問題。每束花裡的花材都有自己的角色與任務。</p>
+      <div class="method-formula">
+        🌹 主花 Hero（最吸睛）＋ 配花 Support（支持）＋ 填充花 Texture（空氣感）＋ 線條花 Structure（結構）
+      </div>
+    </div>
+    <div class="method-card">
+      <div class="method-num">03</div>
+      <h3>商品花禮法</h3>
+      <p>解決「好看但賣不掉」的問題。商品花禮三原則：辨識度、價格帶、送禮場景。</p>
+      <div class="method-formula">
+        🎁 清楚用途 ＋ 穩定價格 ＋ 好拍照 → 花禮不是作品，是商品
+      </div>
+    </div>
+  </div>
+
+  <!-- 教學系統 -->
+  <div style="margin-top:3rem;">
+    <h3 style="font-family:'Noto Serif TC',serif; font-size:1.15rem; margin-bottom:1.5rem; text-align:center;">
+      Flowerpreneur System 四步架構
+    </h3>
+    <div class="card-grid card-grid--4">
+      <div class="card" style="text-align:center; border-top:3px solid var(--rose);">
+        <h3 style="font-size:1rem;">Design</h3>
+        <p>花藝設計<br>配色 × 花材 × 結構</p>
+      </div>
+      <div class="card" style="text-align:center; border-top:3px solid var(--olive);">
+        <h3 style="font-size:1rem;">Product</h3>
+        <p>商品花藝<br>市場導向花禮</p>
+      </div>
+      <div class="card" style="text-align:center; border-top:3px solid var(--gold);">
+        <h3 style="font-size:1rem;">Order</h3>
+        <p>接單能力<br>第一筆訂單</p>
+      </div>
+      <div class="card" style="text-align:center; border-top:3px solid var(--rose-deep);">
+        <h3 style="font-size:1rem;">Shop</h3>
+        <p>花店思維<br>走向自己的花店</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"><div class="divider-line"></div><div class="divider-icon">✿</div></div>
+
+<!-- ═══════════════ PART 7: JOURNEY ═══════════════ -->
+<section class="section fade-up" id="journey">
+  <div class="section-label">Part 07 — Brand Journey</div>
+  <h2 class="section-title">品牌路徑｜從興趣到花店</h2>
+  <p class="section-desc">每位學員都會走過的六個階段，也是品牌承諾的完整旅程。</p>
+
+  <div class="journey">
+    <div class="journey-step">
+      <div class="journey-dot">1</div>
+      <div class="journey-text">喜歡花</div>
+    </div>
+    <div class="journey-arrow">→</div>
+    <div class="journey-step">
+      <div class="journey-dot">2</div>
+      <div class="journey-text">學會做花</div>
+    </div>
+    <div class="journey-arrow">→</div>
+    <div class="journey-step">
+      <div class="journey-dot">3</div>
+      <div class="journey-text">有設計感</div>
+    </div>
+    <div class="journey-arrow">→</div>
+    <div class="journey-step">
+      <div class="journey-dot">4</div>
+      <div class="journey-text">能賣的花</div>
+    </div>
+    <div class="journey-arrow">→</div>
+    <div class="journey-step">
+      <div class="journey-dot">5</div>
+      <div class="journey-text">接到訂單</div>
+    </div>
+    <div class="journey-arrow">→</div>
+    <div class="journey-step">
+      <div class="journey-dot">6</div>
+      <div class="journey-text">自己的花店</div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════ PART 8: DIFFERENTIATION ═══════════════ -->
+<div class="band band--linen">
+  <section class="section fade-up" style="padding-top:0; padding-bottom:0;">
+    <div class="section-label">Part 08 — Differentiation</div>
+    <h2 class="section-title">差異化與核心能力</h2>
+
+    <div style="margin-top:1.5rem;">
+      <h3 style="font-family:'Noto Serif TC',serif; font-size:1.1rem; margin-bottom:1rem;">戀花宅的核心能力公式</h3>
+      <div class="card" style="text-align:center; padding:2.5rem;">
+        <p style="font-family:'Noto Serif TC',serif; font-size:1.3rem; font-weight:700; color:var(--charcoal); line-height:2;">
+          設計邏輯 ＋ 商品思維 ＋ 接單能力 ＋ 花店思維<br>
+          <span style="font-size:0.9rem; color:var(--rose-deep);">＝ Flowerpreneur System</span>
+        </p>
+      </div>
+    </div>
+
+    <table class="styled-table" style="margin-top:2rem;">
+      <thead>
+        <tr>
+          <th>比較維度</th>
+          <th>手作花藝</th>
+          <th>技術花藝</th>
+          <th>證照花藝</th>
+          <th style="background:var(--rose);">戀花宅</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>核心訴求</strong></td>
+          <td>療癒放鬆</td>
+          <td>技術精進</td>
+          <td>取得認證</td>
+          <td style="color:var(--rose-deep); font-weight:600;">商品花藝能力</td>
+        </tr>
+        <tr>
+          <td><strong>教學方式</strong></td>
+          <td>感覺導向</td>
+          <td>師徒傳承</td>
+          <td>標準考試</td>
+          <td style="color:var(--rose-deep); font-weight:600;">系統設計邏輯</td>
+        </tr>
+        <tr>
+          <td><strong>學員出路</strong></td>
+          <td>個人興趣</td>
+          <td>花店就業</td>
+          <td>證照展示</td>
+          <td style="color:var(--rose-deep); font-weight:600;">副業→花店創業</td>
+        </tr>
+        <tr>
+          <td><strong>品牌角色</strong></td>
+          <td>療癒老師</td>
+          <td>技術大師</td>
+          <td>考照機構</td>
+          <td style="color:var(--rose-deep); font-weight:600;">花藝學姊</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+</div>
+
+<!-- ═══════════════ PART 9: MARKET MAP ═══════════════ -->
+<section class="section fade-up" id="market">
+  <div class="section-label">Part 09 — Market Positioning</div>
+  <h2 class="section-title">市場定位地圖</h2>
+  <p class="section-desc">花藝市場有兩條主要軸線：教學方式（感覺 vs 系統）和花藝目的（興趣 vs 商業）。戀花宅佔據的是：<strong>系統 × 商品</strong>的藍海象限。</p>
+
+  <div class="pos-map">
+    <div class="pos-map-axis-x"></div>
+    <div class="pos-map-axis-y"></div>
+    <div class="pos-label pos-label--top">系統 / 方法</div>
+    <div class="pos-label pos-label--bottom">感覺 / 美感</div>
+    <div class="pos-label pos-label--left">興趣 / 療癒</div>
+    <div class="pos-label pos-label--right">商業 / 商品</div>
+    <div class="pos-dot pos-dot--other pos-dot--a">手作花藝課</div>
+    <div class="pos-dot pos-dot--other pos-dot--b">證照花藝</div>
+    <div class="pos-dot pos-dot--other pos-dot--c">花店學徒</div>
+    <div class="pos-dot pos-dot--other pos-dot--d">藝術花藝</div>
+    <div class="pos-dot pos-dot--self">✿ 戀花宅</div>
+  </div>
+</section>
+
+<div class="divider"><div class="divider-line"></div><div class="divider-icon">✿</div></div>
+
+<!-- ═══════════════ PART 10: BUSINESS HEALTH ═══════════════ -->
+<div class="band band--blush">
+  <section class="section section-wide fade-up" id="health">
+    <div class="section-label">Part 10 — Business Health Check</div>
+    <h2 class="section-title">商業健檢摘要</h2>
+    <p class="section-desc">
+      戀花宅的商模是<strong>「雙引擎 ＋ 一個風險放大器」</strong>：社大週課（穩定底盤）、Google 地圖零售（旺季爆量）、合作案（風險回灌）。
+    </p>
+
+    <div class="card-grid card-grid--3" style="margin-top:2rem;">
+      <div class="card">
+        <h3>⚡ 容量超載</h3>
+        <p>旺季（1/2/5/6/7/12月）忙到無法應付——不是努力不夠，是系統吞吐量被打爆。</p>
+      </div>
+      <div class="card">
+        <h3>🔄 風險回灌</h3>
+        <p>合作案的砍價、取消、延付，讓提前投入的資材與工時變成損失。</p>
+      </div>
+      <div class="card">
+        <h3>⏳ 節奏撕裂</h3>
+        <p>淡季想修系統（品牌/開發/規劃），旺季被即時訂單吞沒，修復窗口容易被不確定案侵蝕。</p>
+      </div>
+    </div>
+
+    <!-- 風險指數 -->
+    <div style="margin-top:3rem; max-width:600px;">
+      <h3 style="font-family:'Noto Serif TC',serif; font-size:1.1rem; margin-bottom:1.5rem;">風險指數儀表板</h3>
+
+      <div class="score-bar">
+        <div class="score-label">
+          <strong>整體商業模式風險</strong>
+          <span style="color:var(--gold);">68 / 100</span>
+        </div>
+        <div class="score-track">
+          <div class="score-fill score-fill--yellow" style="width:68%;"></div>
+        </div>
+      </div>
+
+      <div class="score-bar">
+        <div class="score-label">
+          <strong>結構穩定度</strong>
+          <span style="color:var(--gold);">52 / 100</span>
+        </div>
+        <div class="score-track">
+          <div class="score-fill score-fill--yellow" style="width:52%;"></div>
+        </div>
+      </div>
+
+      <div class="score-bar">
+        <div class="score-label">
+          <strong>執行誤判風險</strong>
+          <span style="color:var(--rose-deep);">88 / 100</span>
+        </div>
+        <div class="score-track">
+          <div class="score-fill score-fill--red" style="width:88%;"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 高誤判區 -->
+    <div style="margin-top:2.5rem;">
+      <h3 style="font-family:'Noto Serif TC',serif; font-size:1.05rem; margin-bottom:1rem;">⚠️ 高誤判風險區</h3>
+      <div class="card-grid card-grid--3">
+        <div class="card" style="border-left:3px solid var(--rose-deep);">
+          <h3 style="font-size:0.95rem;">誤判 1</h3>
+          <p>把旺季超載當成「再努力一點就好」——這是系統容量問題，不是意志力問題。</p>
+        </div>
+        <div class="card" style="border-left:3px solid var(--rose-deep);">
+          <h3 style="font-size:0.95rem;">誤判 2</h3>
+          <p>把合作案當淡季穩定器——以目前經驗，合作更像不確定性來源，可能破壞修復窗口。</p>
+        </div>
+        <div class="card" style="border-left:3px solid var(--rose-deep);">
+          <h3 style="font-size:0.95rem;">誤判 3</h3>
+          <p>把淡季規劃當「不急」——淡季是唯一能修系統的時間，被吃掉就會進入長期耗損。</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- 主槓桿 -->
+    <div style="margin-top:2.5rem;">
+      <h3 style="font-family:'Noto Serif TC',serif; font-size:1.05rem; margin-bottom:1rem;">🔑 兩個主槓桿</h3>
+      <div class="card-grid card-grid--2">
+        <div class="card" style="border-top:3px solid var(--olive);">
+          <h3>槓桿 A：吞吐量失衡</h3>
+          <p>旺季超載直接決定能否活著把成果留住。需要建立系統性的產能彈性機制。</p>
+        </div>
+        <div class="card" style="border-top:3px solid var(--olive);">
+          <h3>槓桿 B：交易邊界不穩</h3>
+          <p>合作端風險回灌決定是否「忙完一輪發現沒留下什麼」。需要明確的邊界規則。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ═══════════════ PART 11: NETWORK ═══════════════ -->
+<section class="section section-wide fade-up" id="network">
+  <div class="section-label">Part 11 — Strategic Network</div>
+  <h2 class="section-title">人脈資源盤點</h2>
+  <p class="section-desc">戀花宅擁有橫跨花藝產業、教育體系、商業社群的豐富人脈網絡，是品牌成長的關鍵外部槓桿。</p>
+
+  <div class="network-section">
+    <!-- 花藝產業 -->
+    <div class="network-category">
+      <div class="network-cat-title">🌸 花藝產業核心</div>
+      <div class="network-grid">
+        <div class="network-chip"><strong>大瑄</strong><span>蘭園事業20年+、永生花店10年+、OPS證照發證單位、日本採購關係</span></div>
+        <div class="network-chip"><strong>Ria</strong><span>永生花知名證照課老師5年、旗下眾多學員</span></div>
+        <div class="network-chip"><strong>聖雯</strong><span>板橋花市開店、可調貨支援、花藝同行人脈</span></div>
+        <div class="network-chip"><strong>馨葳</strong><span>桃園永生花店、證照教學、場佈經驗</span></div>
+        <div class="network-chip"><strong>台北市花店協會</strong><span>眾多老牌花店前輩資源</span></div>
+      </div>
+    </div>
+
+    <!-- 核心學員 -->
+    <div class="network-category">
+      <div class="network-cat-title">🎓 核心學員群</div>
+      <div class="network-grid">
+        <div class="network-chip"><strong>琪淑</strong><span>4學期、保險資深內勤、寄賣商品、願意上證照課</span></div>
+        <div class="network-chip"><strong>敏君</strong><span>4學期、小學老師、班長、願意幫忙</span></div>
+        <div class="network-chip"><strong>桂芳</strong><span>3學期、主管級、願意上千元課</span></div>
+        <div class="network-chip"><strong>魏廷</strong><span>3學期、律師、願意幫忙</span></div>
+        <div class="network-chip"><strong>于茜</strong><span>2學期、小學老師、號召力強</span></div>
+        <div class="network-chip"><strong>斐霙</strong><span>遊戲業前同事、資深HR、高信任度</span></div>
+      </div>
+    </div>
+
+    <!-- 商業人脈 -->
+    <div class="network-category">
+      <div class="network-cat-title">💼 商業與社群人脈</div>
+      <div class="network-grid">
+        <div class="network-chip"><strong>坦克</strong><span>青商會長、萬事達金流+醫美、企業與政府人脈</span></div>
+        <div class="network-chip"><strong>達哥</strong><span>商模系統課老師、資源多、教練角色</span></div>
+        <div class="network-chip"><strong>佳雯</strong><span>空間負責人、BNI幹部、人脈廣且可信</span></div>
+        <div class="network-chip"><strong>世豐</strong><span>Threads行銷老師、多方人脈</span></div>
+        <div class="network-chip"><strong>鄭婕</strong><span>台北市青年局委員、跨青年團體</span></div>
+        <div class="network-chip"><strong>思凱</strong><span>青商理事長、政府人脈、可信任</span></div>
+        <div class="network-chip"><strong>BELLA</strong><span>私募基金理專、高行動力、經濟能力佳</span></div>
+      </div>
+    </div>
+
+    <!-- 合作潛力 -->
+    <div class="network-category">
+      <div class="network-cat-title">🤝 合作潛力夥伴</div>
+      <div class="network-grid">
+        <div class="network-chip"><strong>大熊</strong><span>甜點店（酒類甜點）、人脈廣、已討論合作</span></div>
+        <div class="network-chip"><strong>生蠔</strong><span>飾品電商（蝦皮）、可寄賣合作</span></div>
+        <div class="network-chip"><strong>憲若</strong><span>空間設計+精油品牌、可合作香氛產品</span></div>
+        <div class="network-chip"><strong>小虹</strong><span>花晶學院、身心靈老師人脈</span></div>
+        <div class="network-chip"><strong>GRAND FRESA</strong><span>日本飯店、手作課需求</span></div>
+        <div class="network-chip"><strong>美琪</strong><span>基金會會長、有課程平台</span></div>
+        <div class="network-chip"><strong>小晴</strong><span>7-11店長、熱心開朗、適合當門市核心成員</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════ PART 12: GOLDEN SENTENCES ═══════════════ -->
+<div class="band band--linen">
+  <section class="section section-wide fade-up">
+    <div class="section-label">Part 12 — Brand Language System</div>
+    <h2 class="section-title">品牌金句語言系統</h2>
+
+    <div class="golden-grid">
+      <div class="golden-card">
+        <div class="golden-card-label">核心主句</div>
+        <div class="golden-card-text">從第一束花，<br>到自己的花店。</div>
+      </div>
+      <div class="golden-card">
+        <div class="golden-card-label">方法金句</div>
+        <div class="golden-card-text">用設計邏輯做花藝。</div>
+      </div>
+      <div class="golden-card">
+        <div class="golden-card-label">學派金句</div>
+        <div class="golden-card-text">花藝不是天份，<br>而是方法。</div>
+      </div>
+      <div class="golden-card">
+        <div class="golden-card-label">商品金句</div>
+        <div class="golden-card-text">花禮不是作品，<br>是商品。</div>
+      </div>
+      <div class="golden-card">
+        <div class="golden-card-label">行動金句</div>
+        <div class="golden-card-text">先做完第一束花。</div>
+      </div>
+      <div class="golden-card">
+        <div class="golden-card-label">品牌精神</div>
+        <div class="golden-card-text">喜歡花，也可以<br>走向自己的花店。</div>
+      </div>
+    </div>
+
+    <div style="margin-top:2rem; text-align:center;">
+      <p style="font-family:'Noto Serif TC',serif; font-size:0.92rem; color:var(--warm-gray);">
+        學生路徑句：第一束花 → 第一筆訂單 → 第一間花店
+      </p>
+    </div>
+  </section>
+</div>
+
+<!-- ═══════════════ PART 13: ROADMAP ═══════════════ -->
+<section class="section fade-up" id="roadmap">
+  <div class="section-label">Part 13 — 5-Year Roadmap</div>
+  <h2 class="section-title">五年品牌成長路線</h2>
+
+  <div class="timeline">
+    <div class="timeline-item">
+      <div class="timeline-marker">Y1</div>
+      <div class="timeline-content">
+        <h4>建立「戀花宅方法」</h4>
+        <p>
+          讓市場知道教學特色。建立三個核心內容（配色三層法、花材角色法、商品花禮法）。完成入門課、核心課、進階課三層課程。<strong>關鍵成果：10–30 個學生案例。</strong>
+        </p>
+      </div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-marker">Y2</div>
+      <div class="timeline-content">
+        <h4>建立「戀花宅學生系統」</h4>
+        <p>
+          讓學生之間有連結（LINE 社群/FB 社團）。出現第一批接單案例，成為品牌證據。
+        </p>
+      </div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-marker">Y3</div>
+      <div class="timeline-content">
+        <h4>建立「戀花宅體系」</h4>
+        <p>
+          課程系統化（L1 花藝入門 → L2 商品花禮 → L3 接單能力 → L4 花店能力）。開始培養助教。
+        </p>
+      </div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-marker">Y4</div>
+      <div class="timeline-content">
+        <h4>出現「學生花店」</h4>
+        <p>
+          品牌里程碑：第一家學生花店開幕。講出故事：「戀花宅第 1 家學生花店」。
+        </p>
+      </div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-marker">Y5</div>
+      <div class="timeline-content">
+        <h4>成為「花藝學派」</h4>
+        <p>
+          不同城市學生、不同風格花店、共同方法。戀花宅從一間花店/老師，變成一個花藝體系——系統派花藝學派。
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- 成長飛輪 -->
+  <div style="margin-top:4rem; text-align:center;">
+    <h3 style="font-family:'Noto Serif TC',serif; font-size:1.15rem; margin-bottom:0.5rem;">品牌成長飛輪</h3>
+    <p style="font-size:0.85rem; color:var(--warm-gray); margin-bottom:2rem;">當飛輪開始轉動，品牌會越來越穩定。</p>
+    <div class="flywheel">
+      <div class="flywheel-ring">
+        <div class="flywheel-node">花藝<br>內容</div>
+        <div class="flywheel-node">吸引<br>學生</div>
+        <div class="flywheel-node">學生<br>成功</div>
+        <div class="flywheel-node">成為<br>案例</div>
+      </div>
+      <div class="flywheel-center">戀花宅<br>飛輪</div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════ PART 14: MANIFESTO ═══════════════ -->
+<div class="band band--charcoal" id="manifesto">
+  <section class="section fade-up" style="padding-top:0; padding-bottom:0;">
+    <div class="section-label">Part 14 — Brand Manifesto</div>
+    <h2 class="section-title">品牌宣言</h2>
+
+    <div class="manifesto">
+      <p>很多人其實很喜歡花。<br>看到花店時會停下來，<br>看到漂亮的花會多看幾眼。</p>
+      <p>但大多數人心裡也會想：<br><strong>「我沒有天份。」</strong><br>「花藝是不是很難？」<br>「我應該做不到吧。」</p>
+      <p>戀花宅相信一件事：<br><strong>花藝不是天份，而是可以學會的方法。</strong></p>
+      <p>當花藝變成設計，<br>它也可以變成一種能力。</p>
+      <p>有人會接到第一筆訂單。<br>有人會開始做自己的花禮。<br>有人慢慢走向自己的花店。</p>
+      <p>每個人的路都不一樣。<br>但很多故事，都是從同一件事開始的：</p>
+      <p style="font-size:1.4rem; color:#fff; font-weight:700;">第一束花。</p>
+      <p style="margin-top:2rem; font-size:1.2rem; color:var(--gold-light); font-weight:600;">
+        從第一束花，到自己的花店。<br>
+        <span style="font-size:0.9rem; font-weight:400; color:rgba(255,255,255,0.5);">這就是戀花宅。</span>
+      </p>
+    </div>
+  </section>
+</div>
+
+<!-- ═══════════════ FOOTER ═══════════════ -->
+<footer class="footer">
+  <div class="footer-brand">戀花宅精品花藝</div>
+  <div class="footer-line"></div>
+  <p>Brand Positioning Plan — MUSEON × 戀花宅 2026</p>
+  <p style="margin-top:0.5rem; font-size:0.7rem; opacity:0.5;">
+    用設計邏輯做花藝 · 從第一束花，到自己的花店
+  </p>
+</footer>
+
+<!-- ── SCROLL ANIMATION ── -->
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+      }
+    });
+  }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+
+  document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+
+  // Nav active state
+  const sections = document.querySelectorAll('section[id], div[id]');
+  const navLinks = document.querySelectorAll('.nav-links a');
+
+  window.addEventListener('scroll', () => {
+    let current = '';
+    sections.forEach(section => {
+      const rect = section.getBoundingClientRect();
+      if (rect.top <= 150) current = section.getAttribute('id');
+    });
+    navLinks.forEach(link => {
+      link.classList.remove('active');
+      if (link.getAttribute('href') === '#' + current) link.classList.add('active');
+    });
+  });
+});
+</script>
+
+</body>
+</html>
